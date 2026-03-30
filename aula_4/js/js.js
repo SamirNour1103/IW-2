@@ -119,20 +119,126 @@ while(true){
 //9. Soma de Números Positivos
 //Peça ao usuário vários números e some-os até que ele digite um número negativo, então exiba o total.
 
+var somatotal = 0;
+var continuar = true;
+
+while (continuar) {
+    var numero6 = parseInt(prompt("digite um número para somar ou um número negativo para sair:"));
+
+    if (numero6 < 0) {
+        continuar = false; 
+    } else {
+        somatotal += numero6;
+        console.log("Soma atual: " + somatotal);
+    }
+}
+
+console.log("O total da soma é: " + somatotal);
+
+
 //10. Adivinhação
 //Escolha um número aleatório de 1 a 10 e peça ao usuário para adivinhar. Dê dicas até ele acertar.
+
+console.log("-Exercício 10");
+
+var numerosecreto = 7;
+var chute;
+
+console.log("adivinhe o número que eu estou pensando de 1 a 10!");
+
+while (chute != numerosecreto) {
+    chute = parseInt(prompt("Qual o seu chute?"));
+
+    if (chute > numeroSecreto) {
+        console.log("alto demais! tente um número menor");
+    } else if (chute < numeroSecreto) {
+        console.log("baixo demais! tente um número maior");
+    } else if (chute == numeroSecreto) {
+        console.log("ok! você acertou, o número era " + numerosecreto);
+    } else {
+        console.log("valor inválido digite um número");
+    }
+}
 
 //11. Cálculo de Fatorial
 //Peça um número e exiba seu fatorial (n!).
 
+console.log("-Exercício 11");
+
+var numerofator = parseInt(prompt("Digite um número para calcular o fatorial:"));
+var resultado3 = 1;
+
+for (var i = 1; i <= numerofator; i++) {
+    resultado3 = resultado3 * i;
+}
+
+console.log("O fatorial de " + numerofator+ " é: " + resultado3);
+
 //12. Validação de Nota
 //Peça uma nota de 0 a 10 e continue pedindo até que o usuário insira um valor válido.
+
+console.log("-Exercício 12");
+
+var nota = -1;
+while (nota < 0 || nota > 10) {
+    nota = parseFloat(prompt("digite uma nota valida 0 a 10:"));
+    if (nota < 0 || nota > 10) {
+        console.log("nota inválida! tente novamente");
+    }
+}
+console.log("nota aceita: " + nota);
 
 //13. Média de Notas
 //Peça 3 notas ao usuário, calcule e exiba sua média. Informe se ele foi aprovado (média ≥ 7) ou reprovado.
 
+console.log("-Exercício 13");
+
+var numero7 = parseFloat(prompt("Digite a primeira nota:"));
+var numero8 = parseFloat(prompt("Digite a segunda nota:"));
+var numero9 = parseFloat(prompt("Digite a terceira nota:"));
+
+var media = (numero7 + numero8 + numero9) / 3;
+console.log("sua média é: " + media.toFixed(2));
+
+if (media >= 7) {
+    console.log("aprovado!");
+} else {
+    console.log("reprovado");
+}
+
 //14. Caixa Eletrônico
 //Peça um valor ao usuário e informe as possíveis cédulas para saque (100, 50, 20, 10, 5, 2, 1).
 
+console.log("-Exercício 14");
+
+var valor9 = parseInt(prompt("Valor:"));
+var numero10 = parseInt(valor / 100);
+valor %= 100;
+var numero11 = parseInt(valor / 50);
+valor %= 50;
+var numero12 = parseInt(valor / 20);
+valor %= 20;
+var numero13 = parseInt(valor / 10);
+valor %= 10;
+var numero14 = parseInt(valor / 5);
+valor %= 5;
+var numero15 = parseInt(valor / 2);
+valor %= 2;
+var numero16 = valor;
+if (numero10 > 0) console.log(numero10 + " de 100");
+if (numero11 > 0) console.log(numero11 + " de 50");
+if (numero12 > 0) console.log(numero12 + " de 20");
+if (numero13 > 0) console.log(numero13 + " de 10");
+if (numero14 > 0) console.log(numero14 + " de 5");
+if (numero15 > 0) console.log(numero15 + " de 2");
+if (numero16 > 0) console.log(numero16 + " de 1");
 //15. Números Ímpares
 //Peça um número ao usuário e exiba todos os números ímpares de 1 até esse número.
+
+console.log("-Exercício 15");
+
+var limite = parseInt(prompt("impares até:"));
+
+for (var i = 1; i <= limite; i++) {
+    if (i % 2 !== 0) console.log(i);
+}
