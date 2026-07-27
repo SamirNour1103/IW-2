@@ -1,0 +1,36 @@
+{
+  "personagem": {
+    "nome": "Relâmpago McQueen (Lightning McQueen)",
+    "franquia": "Carros (Cars)",
+    "origem": "Radiator Springs (originário das pistas de corrida profissionais)",
+    "primeira_aparicao": "Carros (2006)",
+    "perfil_fisico": {
+      "altura": "Aprox. 1.15m (altura) / 4.5m (comprimento)",
+      "porte_fisico": "Carro de Corrida Stock Car / Protótipo Leve",
+      "marca_registrada": "Pintura vermelha com o número 95 e adesivos de raio",
+      "item_alternativo": "Pintura azul 'Hudson Hornet' / Primer azul e marrom sem adesivos"
+    },
+    "atributos_sobrehumanos": {
+      "velocidade": "Extrema (pode ultrapassar 320 km/h)",
+      "durabilidade": "Alta resistência a impactos de alta velocidade",
+      "aerodinamica": "Ajustável (aprendeu a pilotar na terra com o Doc Hudson)",
+      "reflexos": "Manobras de alta precisão em ultrapassagens"
+    },
+    "combate": {
+      "arma_favorita": "Motor V8 de corrida / Pneus Lightyear",
+      "estilo": "Velocidade bruta, derrapagens controladas (drifts) e manobras audaciosas",
+      "fraqueza_notavel": "Superaquecimento, furos de pneu e pistas de terra sem o treino adequado"
+    },
+    "psicologia": {
+      "motivacao": "Vencer a Copa Piston e honrar o legado de Doc Hudson",
+      "estado_mental": "Carismático, competitivo, inicialmente arrogante, mas leal e humilde com o tempo",
+      "gatilho_sonoro": "Kachow!"
+    },
+    "variantes": [
+      "Dinoco McQueen (Versão do sonho)",
+      "Radiator Springs McQueen (Com pneus faixa-branca)",
+      "Fabulous Lightning McQueen (Homenagem ao Doc Hudson)",
+      "Cruz Ramirez Training McQueen (Pintura especial de treino)"
+    ]
+  }
+}
