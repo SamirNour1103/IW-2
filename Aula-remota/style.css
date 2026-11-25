@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&family=Plus+Jakarta+Sans:wght@400;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+body {
+    background-color: #e8e4d9;
+    background-image: radial-gradient(#c8c2b3 1px, transparent 1px);
+    background-size: 20px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 30px 20px;
+}
+
+.container {
+    position: relative;
+    background-color: #fffdf7;
+    background-image: linear-gradient(#e6eef8 1px, transparent 1px);
+    background-size: 100% 34px;
+    background-position: 0 22px;
+    padding: 44px 40px 36px 56px;
+    border-radius: 3px 12px 12px 3px;
+    box-shadow: 
+        0 12px 28px rgba(45, 40, 30, 0.14),
+        0 2px 6px rgba(45, 40, 30, 0.08),
+        6px 6px 0 -1px #f7f3e8,
+        6px 6px 0 0 #d5cfc0;
+    width: 100%;
+    max-width: 440px;
+    border: 1px solid #e2dcd0;
+}
+
+.container::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 38px;
+    width: 2px;
+    background-color: rgba(235, 110, 110, 0.55);
+}
+
+.container::after {
+    content: "";
+    position: absolute;
+    top: -12px;
+    left: 50%;
+    transform: translateX(-50%) rotate(-1.5deg);
+    width: 110px;
+    height: 26px;
+    background-color: rgba(255, 235, 150, 0.72);
+    border-left: 1px dashed rgba(200, 180, 100, 0.4);
+    border-right: 1px dashed rgba(200, 180, 100, 0.4);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.06);
+}
+
+.container h2 {
+    font-family: 'Patrick Hand', cursive;
+    text-align: center;
+    color: #2c2a29;
+    margin-bottom: 26px;
+    font-size: 2rem;
+    letter-spacing: 0.5px;
+    border-bottom: 2px dashed #d6cfc2;
+    padding-bottom: 8px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-size: 0.85rem;
+    font-weight: 700;
+    color: #5c574f;
+    text-transform: uppercase;
+    letter-spacing: 0.6px;
+    margin-bottom: 4px;
+}
+
+input {
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid #b8b2a6;
+    border-radius: 0;
+    padding: 8px 4px;
+    margin-bottom: 20px;
+    font-size: 1.05rem;
+    color: #1f2937;
+    transition: border-color 0.25s, background-color 0.25s}
